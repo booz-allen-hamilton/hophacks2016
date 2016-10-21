@@ -1,0 +1,17 @@
+{
+  "name": "baltimore311",
+  "version": "1.0.0",
+  "description": "Sample application that checks recent 311 requests for an address",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "hbs": "^4.0.1",
+    "request": "^2.75.0",
+    "underscore": "^1.8.3"
+  }
+}

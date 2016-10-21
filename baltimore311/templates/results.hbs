@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>311 Recent Search</title>
+
+    <style type="text/css">
+      table, th, td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>311 Recent Search</h2>
+    {{#if results}}
+      <table>
+        <thead>
+          <tr>
+            <td>Type</td>
+            <td>Description</td>
+            <td>Attachment URL</td>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each results}}
+            <tr>
+              <td>{{service_name}}</td>
+              <td>{{description}}</td>
+              <td><a href={{media_url}} target="_blank">View</a></td>
+            </tr>
+          {{/each}} 
+        </tbody>
+      </table>
+    {{else}}
+      <p>No results found.</p>
+    {{/if}}
+  </body>
+</html>
